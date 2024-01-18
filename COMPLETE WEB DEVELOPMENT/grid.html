@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        section{
+            height: 500px;
+            width: 80vw;
+            border: 4px solid red;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: 300px 300px 300px;
+            grid-template-rows: 150px 150px 150px;
+            /* grid-auto-flow: column; */
+            /* grid-auto-flow: row; */
+            grid-auto-rows: 50px;
+            /* grid-auto-columns: 50px; */
+            background-color: blueviolet;
+        }
+        div:nth-of-type(1){
+            background-color: aqua;
+        }
+        div:nth-of-type(2){
+            background-color: rgb(45, 22, 220);
+        }
+        div:nth-of-type(3){
+            background-color: rgb(186, 16, 16);
+        }
+        div:nth-of-type(4){
+            background-color: rgb(16, 211, 120);
+        }
+        div:nth-of-type(5){
+            background-color: rgb(246, 146, 146);
+        }
+        div:nth-of-type(6){
+            background-color: rgb(232, 144, 12);
+        }
+        div:nth-of-type(7){
+            background-color: rgb(5, 99, 54);
+        }
+        div:nth-of-type(8){
+            background-color: yellow;
+        }
+        div:nth-of-type(9){
+            background-color: magenta;
+        }
+        div:nth-of-type(10){
+            background-color: purple;
+        }
+        #one{
+            /* grid-row-start: 1;
+            grid-row-end: 4; */
+
+            /* grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3; */
+        } 
+        .child{
+            background-color: blueviolet;
+            border: 4px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- grid -->
+    <section>
+        <div id="one" class="child"> 1 </div>
+        <div class="child"> 2 </div>
+        <div class="child"> 3</div>
+        <div class="child"> 4 </div>
+        <div class="child"> 5 </div>
+        <div class="child"> 6 </div>
+        <div class="child"> 7 </div>
+        <div class="child"> 8 </div>
+        <div class="child"> 9 </div>
+        <div class="child"> 10 </div>
+    </section>
+</body>
+</html>

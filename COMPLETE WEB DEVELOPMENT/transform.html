@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="transform.css"> -->
+
+    <style> -->
+
+         section{
+            height: 350px;
+            width: 350px;
+            margin: 40px auto;
+            position: relative;
+            transition: 3s;
+            transform-style: preserve-3d;
+
+        }
+        body{
+            perspective: 900px;
+            /* perspective: 100px; */
+        }
+        section:hover{
+            transform: rotateY(180deg);
+        }
+        div{
+            
+            height: 100%;
+            width: 100%;
+        }
+
+        .one{
+            background-color: darkturquoise;
+            z-index: 1;
+        }
+        .two{
+            background-color: fuchsia;
+            transform: rotateY(180deg);
+            /* z-index: 2;  */
+        }
+        .one, .two{
+            position: absolute;
+            backface-visibility: hidden;
+        } 
+        
+    <!-- </style>
+
+</head>
+<body>
+    <section>
+        <div class="one">div A</div>
+        <div class="two">div B</div>
+    </section>
+    
+</body>
+</html>

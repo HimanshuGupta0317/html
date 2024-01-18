@@ -1,0 +1,67 @@
+section
+{
+    display: flex;
+    /* flex-direction: column; */           /* X axis*/
+    /* flex-direction: row; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row-reverse; */
+    /* justify-content: center; */
+    /* justify-content: end; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+
+    /* flex-direction: column; */
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    /* justify-content: center; */
+
+    flex-wrap: wrap;
+} 
+ 
+ 
+ 
+ div{
+    height: 100px;
+    width: 100px;
+    /* display: inline-block; */
+    /* flex-basis: 200px; */
+    
+
+ }
+
+ div:nth-of-type(1)
+ {
+    background-color: blue;
+    /* position: static;       not any property work after static position */
+    /* top: 100px; */
+    flex-basis: 200px;
+    /* flex-shrink: 1; */
+    flex-grow: 1;
+
+ }
+
+ div:nth-of-type(2)
+ {
+    background-color: blueviolet;  /*top is used to move top to bottom*/
+    /* position: absolute;
+    top: 0px;
+    top: 100px; */
+
+    /* position: relative;
+    top: 100px; */
+
+    /* position: fixed;
+    top: 100px; */
+
+   flex-shrink: 2;
+    flex-grow: 2;
+ }
+
+ div:nth-of-type(3)
+ {
+    background-color: brown;
+    flex-grow: 3;
+ }
+
+  
